@@ -1,6 +1,7 @@
 <?php 
 //$servername 	= 'production';
 $servername 	= 'local';
+$host			= $_SERVER['HTTP_HOST'];
 switch ($host){
 	case "wx1.jkl.com":
 		$servername 	= 'local';
