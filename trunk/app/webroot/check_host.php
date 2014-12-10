@@ -2,8 +2,6 @@
 //$servername 	= 'production';
 $servername 	= 'local';
 $host			= $_SERVER['HTTP_HOST'];
-echo $host;
-exit;
 switch ($host){
 	case "wx1.jkl.com":
 		$servername 	= 'local';
@@ -12,6 +10,7 @@ switch ($host){
 		$servername 	= 'dev';
 		break;
 	case "182.92.184.19":
+	case "182.92.184.19:8001":
 		$servername 	= 'production';
 		break;
 }
